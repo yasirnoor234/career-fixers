@@ -49,7 +49,9 @@ export default function FreeReviewForm({ idPrefix = 'hero', isCompact = false }:
     }
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     if (!name.trim() || !email.trim()) {
@@ -69,33 +71,48 @@ export default function FreeReviewForm({ idPrefix = 'hero', isCompact = false }:
       return;
     }
 
+    setIsSubmitting(true);
+    setStatusMessage(null);
+
     const submission = {
       name,
       email,
       target,
-      notes,
-      fileName: fileName || 'No file attached',
-      submittedAt: new Date().toISOString(),
+      notes: notes ? `${notes} (Uploaded: ${fileName || 'None'})` : `Uploaded File: ${fileName || 'None'}`,
+      type: 'free-review',
     };
 
     try {
+      // Local backup
       const stored = JSON.parse(localStorage.getItem('careerFixersSubmissions') || '[]');
-      stored.push(submission);
+      stored.push({ ...submission, submittedAt: new Date().toISOString() });
       localStorage.setItem('careerFixersSubmissions', JSON.stringify(stored));
+
+      // Send to server API endpoint for Titan Mail delivery to suban@careerfixers.com
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(submission),
+      });
+
+      if (!res.ok) {
+        console.warn('Email dispatch warning:', await res.text());
+      }
     } catch (err) {
-      console.warn('Could not save to localStorage', err);
+      console.warn('Submission network notice:', err);
+    } finally {
+      setIsSubmitting(false);
+      setStatusMessage({
+        type: 'success',
+        text: `Thank you, ${name}! Your resume review request has been received. Our senior writing team will review your details and follow up via ${email}.`,
+      });
+
+      setName('');
+      setEmail('');
+      setTarget('');
+      setNotes('');
+      setFileName('');
     }
-
-    setStatusMessage({
-      type: 'success',
-      text: `Thank you, ${name}! Your resume review request has been received. Our senior writing team will review your document and follow up via ${email}.`,
-    });
-
-    setName('');
-    setEmail('');
-    setTarget('');
-    setNotes('');
-    setFileName('');
   };
 
   return (

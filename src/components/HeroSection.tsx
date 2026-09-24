@@ -18,7 +18,7 @@ export default function HeroSection() {
           </p>
 
           <div className="hero-actions">
-            <Link className="btn btn-primary btn-lg" href="#free-review">
+            <Link className="btn btn-hero-light btn-lg" href="#free-review">
               Get My Free Resume Review
             </Link>
             <Link className="btn btn-outline-white btn-lg" href="/#resume-samples">

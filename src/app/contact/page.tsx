@@ -10,7 +10,7 @@ export default function ContactPage() {
   const [statusMessage, setStatusMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     if (!name.trim() || !email.trim() || !notes.trim()) {
@@ -31,24 +31,34 @@ export default function ContactPage() {
     }
 
     setIsSubmitting(true);
+    setStatusMessage(null);
 
     const message = {
       name,
       email,
       careerLevel,
       notes,
-      submittedAt: new Date().toISOString(),
+      type: 'contact-inquiry',
     };
 
     try {
       const stored = JSON.parse(localStorage.getItem('careerFixersMessages') || '[]');
-      stored.push(message);
+      stored.push({ ...message, submittedAt: new Date().toISOString() });
       localStorage.setItem('careerFixersMessages', JSON.stringify(stored));
-    } catch (err) {
-      console.warn('Could not save to localStorage', err);
-    }
 
-    setTimeout(() => {
+      // Send to server API endpoint for Titan Mail delivery to suban@careerfixers.com
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(message),
+      });
+
+      if (!res.ok) {
+        console.warn('Contact dispatch response:', await res.text());
+      }
+    } catch (err) {
+      console.warn('Could not complete network submission', err);
+    } finally {
       setIsSubmitting(false);
       setStatusMessage({
         type: 'success',
@@ -58,7 +68,7 @@ export default function ContactPage() {
       setEmail('');
       setCareerLevel('executive');
       setNotes('');
-    }, 400);
+    }
   };
 
   return (
