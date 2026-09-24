@@ -3,6 +3,7 @@ import TrustSection from '@/components/TrustSection';
 import ProblemSection from '@/components/ProblemSection';
 import ServicesGrid from '@/components/ServicesGrid';
 import AtsSection from '@/components/AtsSection';
+import ClientRecommendations from '@/components/ClientRecommendations';
 import MethodologySection from '@/components/MethodologySection';
 import CareerLevelsSection from '@/components/CareerLevelsSection';
 import PricingSection from '@/components/PricingSection';
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ProblemSection />
       <ServicesGrid />
       <AtsSection />
+      <ClientRecommendations />
       <MethodologySection />
       <CareerLevelsSection />
       <PricingSection />
