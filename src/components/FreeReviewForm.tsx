@@ -88,7 +88,7 @@ export default function FreeReviewForm({ idPrefix = 'hero', isCompact = false }:
       stored.push({ ...submission, submittedAt: new Date().toISOString() });
       localStorage.setItem('careerFixersSubmissions', JSON.stringify(stored));
 
-      // Send to server API endpoint for Titan Mail delivery to suban@careerfixers.com
+      // Send to server API endpoint for email delivery to ceo.careerfixers@gmail.com
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -5,8 +5,8 @@ import ServicesGrid from '@/components/ServicesGrid';
 import AtsSection from '@/components/AtsSection';
 import MethodologySection from '@/components/MethodologySection';
 import CareerLevelsSection from '@/components/CareerLevelsSection';
-import SamplesGallery from '@/components/SamplesGallery';
 import PricingSection from '@/components/PricingSection';
+import SamplesGallery from '@/components/SamplesGallery';
 import DirectCollaboration from '@/components/DirectCollaboration';
 import FaqSection from '@/components/FaqSection';
 import FinalCta from '@/components/FinalCta';
@@ -21,8 +21,8 @@ export default function HomePage() {
       <AtsSection />
       <MethodologySection />
       <CareerLevelsSection />
-      <SamplesGallery />
       <PricingSection />
+      <SamplesGallery />
       <DirectCollaboration />
       <FaqSection />
       <FinalCta />

@@ -14,12 +14,12 @@ export async function POST(req: Request) {
     }
 
     const formType = type === 'free-review' ? 'Free Resume Review Request' : 'Direct Message / Inquiry';
-    const recipientEmail = 'suban@careerfixers.com';
+    const recipientEmail = process.env.RECIPIENT_EMAIL || 'ceo.careerfixers@gmail.com';
 
-    // Titan Mail (Hostinger) SMTP Configuration
-    const smtpHost = process.env.SMTP_HOST || 'smtp.titan.email';
+    // Gmail SMTP Configuration
+    const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
     const smtpPort = parseInt(process.env.SMTP_PORT || '465', 10);
-    const smtpUser = process.env.SMTP_USER || 'suban@careerfixers.com';
+    const smtpUser = process.env.SMTP_USER || 'ceo.careerfixers@gmail.com';
     const smtpPass = process.env.SMTP_PASSWORD;
 
     const emailSubject = `[Career Fixers] New ${formType} from ${name}`;
@@ -75,7 +75,7 @@ export async function POST(req: Request) {
       </div>
     `;
 
-    // If SMTP credentials exist, send via Hostinger Titan Mail
+    // If SMTP credentials exist, send via Gmail SMTP
     if (smtpPass) {
       const transporter = nodemailer.createTransport({
         host: smtpHost,
@@ -97,7 +97,7 @@ export async function POST(req: Request) {
 
       return NextResponse.json({
         success: true,
-        message: 'Email delivered successfully to suban@careerfixers.com',
+        message: `Email delivered successfully to ${recipientEmail}`,
       });
     } else {
       // Development / Fallback mode when SMTP_PASSWORD is not set yet in environment
@@ -112,7 +112,7 @@ export async function POST(req: Request) {
 
       return NextResponse.json({
         success: true,
-        message: 'Submission received. (Configure SMTP_PASSWORD in .env.local to enable live Hostinger Titan SMTP dispatch)',
+        message: 'Submission received. (Configure SMTP_PASSWORD in .env.local to enable live Gmail SMTP dispatch)',
       });
     }
   } catch (error: unknown) {

@@ -120,7 +120,7 @@ export default function PricingSection() {
                 <div className="pricing-tier-name">Mid-Career Package</div>
                 <div className="pricing-price">
                   <span className="price-currency">$</span>
-                  <span className="price-amount">200</span>
+                  <span className="price-amount">175</span>
                   <span className="price-period">/ total bundle</span>
                 </div>
                 <p className="pricing-description">
@@ -129,8 +129,8 @@ export default function PricingSection() {
 
                 <div className="pricing-breakdown">
                   <div className="breakdown-row"><span>Resume Rewrite</span><strong>$100</strong></div>
-                  <div className="breakdown-row"><span>LinkedIn Profile</span><strong>$70</strong></div>
-                  <div className="breakdown-row"><span>Custom Cover Letter</span><strong>$30</strong></div>
+                  <div className="breakdown-row"><span>LinkedIn Profile</span><strong>$50</strong></div>
+                  <div className="breakdown-row"><span>Custom Cover Letter</span><strong>$25</strong></div>
                 </div>
 
                 <div className="pricing-includes">
@@ -181,7 +181,7 @@ export default function PricingSection() {
                 <div className="pricing-tier-name">Executive Package</div>
                 <div className="pricing-price">
                   <span className="price-currency">$</span>
-                  <span className="price-amount">250</span>
+                  <span className="price-amount">225</span>
                   <span className="price-period">/ total bundle</span>
                 </div>
                 <p className="pricing-description">
@@ -189,9 +189,9 @@ export default function PricingSection() {
                 </p>
 
                 <div className="pricing-breakdown">
-                  <div className="breakdown-row"><span>Resume / CV</span><strong>$150</strong></div>
-                  <div className="breakdown-row"><span>LinkedIn Branding</span><strong>$70</strong></div>
-                  <div className="breakdown-row"><span>Executive Letter</span><strong>$30</strong></div>
+                  <div className="breakdown-row"><span>Executive Rewrite</span><strong>$150</strong></div>
+                  <div className="breakdown-row"><span>LinkedIn Profile</span><strong>$50</strong></div>
+                  <div className="breakdown-row"><span>Custom Cover Letter</span><strong>$25</strong></div>
                 </div>
 
                 <div className="pricing-includes">

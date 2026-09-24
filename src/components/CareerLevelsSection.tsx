@@ -62,7 +62,7 @@ export default function CareerLevelsSection() {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Complete package at $200</span>
+                <span>Complete package at $175</span>
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ export default function CareerLevelsSection() {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Full executive dossier at $250</span>
+                <span>Full executive dossier at $225</span>
               </li>
             </ul>
           </div>

@@ -23,7 +23,7 @@ export default function LinkedInOptimizationPage() {
           </p>
           <div className="hero-actions" style={{ justifyContent: 'center' }}>
             <Link className="btn btn-brand" href="/pricing">
-              Order LinkedIn Optimization ($50 - $70)
+              Order LinkedIn Optimization ($50)
             </Link>
             <Link className="btn btn-outline-white" href="/#free-review">
               Request Free Consultation

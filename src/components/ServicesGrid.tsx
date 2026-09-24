@@ -234,7 +234,7 @@ export default function ServicesGrid() {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                Maximum bundle savings ($150 - $250)
+                Maximum bundle savings ($150 - $225)
               </li>
               <li>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">

@@ -29,7 +29,7 @@ export default function AnnouncementBar() {
             </svg>
             100% U.S.-Based Writers
           </span>
-          <a href="mailto:farah@careerfixers.com">farah@careerfixers.com</a>
+          <a href="mailto:ceo.careerfixers@gmail.com">ceo.careerfixers@gmail.com</a>
         </div>
       </div>
     </div>

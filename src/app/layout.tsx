@@ -72,7 +72,7 @@ export default function RootLayout({
       'Professional ATS-friendly resume writing, cover letters, and LinkedIn profile optimization by experienced US-based writers.',
     url: 'https://career-fixers.web.app/',
     logo: 'https://career-fixers.web.app/images/executive-classic.png',
-    priceRange: '$75 - $250',
+    priceRange: '$25 - $225',
     contactPoint: [
       {
         '@type': 'ContactPoint',

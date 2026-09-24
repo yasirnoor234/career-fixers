@@ -23,7 +23,7 @@ export default function CoverLetterPage() {
           </p>
           <div className="hero-actions" style={{ justifyContent: 'center' }}>
             <Link className="btn btn-brand" href="/pricing">
-              Order Cover Letter ($25 - $30)
+              Order Cover Letter ($25)
             </Link>
             <Link className="btn btn-outline-white" href="/#free-review">
               Request Free Consultation
