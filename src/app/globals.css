@@ -1103,12 +1103,13 @@ textarea.form-control {
 }
 
 .problem-tag {
-  font-size: 0.6875rem;
+  font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 3px 10px;
+  letter-spacing: 0.03em;
+  padding: 4px 10px;
   border-radius: var(--radius-full);
+  white-space: nowrap;
 }
 
 .problem-tag.tag-rose {
@@ -1170,7 +1171,7 @@ textarea.form-control {
   border-left: 3px solid var(--color-primary);
   border-radius: var(--radius-sm);
   padding: 14px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   flex: 1;
 }
 
@@ -1195,19 +1196,21 @@ textarea.form-control {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(22, 163, 74, 0.06);
-  border: 1px solid rgba(22, 163, 74, 0.2);
-  padding: 8px 12px;
+  background: rgba(22, 163, 74, 0.08);
+  border: 1px solid rgba(22, 163, 74, 0.22);
+  padding: 9px 12px;
   border-radius: var(--radius-md);
-  font-size: 0.75rem;
+  font-size: 0.78125rem;
   font-weight: 700;
   color: #15803D;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .solution-check {
-  font-weight: 900;
-  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   color: #16A34A;
 }
 

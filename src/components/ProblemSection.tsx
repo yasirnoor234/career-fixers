@@ -14,7 +14,7 @@ export default function ProblemSection() {
           {/* Card 1 */}
           <div className="problem-card">
             <div className="problem-card-header">
-              <span className="problem-tag tag-rose">ATS Filter Black Hole</span>
+              <span className="problem-tag tag-rose">ATS Black Hole</span>
               <div className="problem-card-icon icon-rose" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <circle cx="12" cy="12" r="10" />
@@ -28,7 +28,11 @@ export default function ProblemSection() {
               <p>I am fully qualified for the positions I apply to, but I am barely getting callbacks or recruiter screening calls.</p>
             </div>
             <div className="problem-solution-pill">
-              <span className="solution-check">&check;</span>
+              <span className="solution-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
               <span>99% ATS Keyword &amp; Header Mapping</span>
             </div>
           </div>
@@ -36,7 +40,7 @@ export default function ProblemSection() {
           {/* Card 2 */}
           <div className="problem-card">
             <div className="problem-card-header">
-              <span className="problem-tag tag-amber">Duty-Heavy, Metric-Light</span>
+              <span className="problem-tag tag-amber">Duty vs Impact</span>
               <div className="problem-card-icon icon-amber" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -51,7 +55,11 @@ export default function ProblemSection() {
               <p>My resume reads like an exhausting list of daily tasks rather than showcasing what I actually achieved for the company.</p>
             </div>
             <div className="problem-solution-pill">
-              <span className="solution-check">&check;</span>
+              <span className="solution-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
               <span>Quantified Revenue &amp; Efficiency ROI</span>
             </div>
           </div>
@@ -59,7 +67,7 @@ export default function ProblemSection() {
           {/* Card 3 */}
           <div className="problem-card">
             <div className="problem-card-header">
-              <span className="problem-tag tag-blue">Seniority Under-Positioned</span>
+              <span className="problem-tag tag-blue">Seniority Mismatch</span>
               <div className="problem-card-icon icon-blue" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <line x1="7" y1="17" x2="17" y2="7" />
@@ -72,7 +80,11 @@ export default function ProblemSection() {
               <p>I have grown into senior leadership responsibilities, but my resume still looks like an entry-level layout.</p>
             </div>
             <div className="problem-solution-pill">
-              <span className="solution-check">&check;</span>
+              <span className="solution-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
               <span>Executive Scope &amp; Strategic Narrative</span>
             </div>
           </div>
@@ -80,7 +92,7 @@ export default function ProblemSection() {
           {/* Card 4 */}
           <div className="problem-card">
             <div className="problem-card-header">
-              <span className="problem-tag tag-gold">Career Pivot &amp; Transition Gap</span>
+              <span className="problem-tag tag-gold">Career Pivot Gap</span>
               <div className="problem-card-icon icon-gold" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -92,7 +104,11 @@ export default function ProblemSection() {
               <p>I am switching industries or targeting new domains and do not know how to reposition my transferable competencies.</p>
             </div>
             <div className="problem-solution-pill">
-              <span className="solution-check">&check;</span>
+              <span className="solution-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
               <span>Transferable Skill &amp; Domain Alignment</span>
             </div>
           </div>
