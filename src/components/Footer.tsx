@@ -118,7 +118,17 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <div>&copy; {new Date().getFullYear()} Career Fixers. All rights reserved. U.S. Professional Career Documents.</div>
+          <div>
+            &copy; {new Date().getFullYear()} Career Fixers. All rights reserved. U.S. Professional Career Documents. &bull; Copyright by{' '}
+            <a
+              href="https://codexvetech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'var(--color-gold-accent)', fontWeight: 600, textDecoration: 'underline' }}
+            >
+              codexvetech.com
+            </a>
+          </div>
           <div className="footer-legal-links">
             <Link href="/about#privacy">Privacy Policy</Link>
             <Link href="/about#terms">Terms of Service</Link>
