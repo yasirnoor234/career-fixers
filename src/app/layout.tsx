@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import AnnouncementBar from '@/components/AnnouncementBar';
@@ -154,6 +155,25 @@ export default function RootLayout({
         />
       </head>
       <body className={plusJakartaSans.className}>
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-LE9Z3T4R50"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LE9Z3T4R50', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
