@@ -82,6 +82,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F172A'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='22' font-family='sans-serif' font-weight='800' fill='%23FFFFFF'%3ECF%3C/text%3E%3C/svg%3E",
   },
+  verification: {
+    google: '-kl6pFmIV6N057pXMIVLPZsJ4PA7B--ibJaPzgcCGM8',
+  },
 };
 
 export default function RootLayout({
