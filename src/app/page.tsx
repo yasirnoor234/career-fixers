@@ -20,12 +20,12 @@ export default function HomePage() {
       <ProblemSection />
       <ServicesGrid />
       <AtsSection />
-      <ClientRecommendations />
       <MethodologySection />
       <CareerLevelsSection />
       <PricingSection />
       <SamplesGallery />
       <DirectCollaboration />
+      <ClientRecommendations />
       <FaqSection />
       <FinalCta />
     </>
