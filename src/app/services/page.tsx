@@ -4,11 +4,32 @@ import ServicesGrid from '@/components/ServicesGrid';
 import FinalCta from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'Career Services & Packages | Career Fixers',
+  title: 'Career Services & Document Packages | ATS Resumes, CVs, LinkedIn & Cover Letters',
   description:
-    'Explore Career Fixers full range of career document services: ATS resumes, CV writing, executive biographies, custom cover letters, and LinkedIn optimization.',
+    'Explore Career Fixers comprehensive suite of career document services: ATS resume rewrites, executive CVs, LinkedIn optimization, cover letters, and career transition packages.',
+  keywords: [
+    'career services',
+    'resume packages',
+    'ATS resume services',
+    'executive CV writing',
+    'LinkedIn makeover',
+    'cover letter writing',
+    'career transition documents',
+  ],
   alternates: {
-    canonical: '/services',
+    canonical: 'https://www.careerfixers.com/services',
+  },
+  openGraph: {
+    title: 'Career Services & Document Packages | Career Fixers',
+    description:
+      'Explore Career Fixers full catalog of ATS-friendly career services, executive resumes, LinkedIn optimization, and cover letters.',
+    url: 'https://www.careerfixers.com/services',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Career Document Services & Packages | Career Fixers',
+    description: 'Human-crafted ATS resumes, LinkedIn makeovers, and executive documents.',
   },
 };
 

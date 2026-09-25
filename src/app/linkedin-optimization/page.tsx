@@ -3,11 +3,30 @@ import Link from 'next/link';
 import FinalCta from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'LinkedIn Profile Optimization & Makeover | Career Fixers',
+  title: 'LinkedIn Profile Optimization & Executive Makeover Service | Career Fixers',
   description:
-    'Transform your LinkedIn profile into a 24/7 recruiter magnet. Search-optimized headlines, compelling About summaries, and high-impact experience positioning.',
+    'Transform your LinkedIn profile into an inbound recruiter magnet. Search-optimized headlines, executive About summaries, skills alignment, and keyword positioning.',
+  keywords: [
+    'LinkedIn profile optimization',
+    'LinkedIn makeover service',
+    'executive LinkedIn writer',
+    'LinkedIn SEO',
+    'recruiter search optimization',
+  ],
   alternates: {
-    canonical: '/linkedin-optimization',
+    canonical: 'https://www.careerfixers.com/linkedin-optimization',
+  },
+  openGraph: {
+    title: 'LinkedIn Profile Optimization Service | Career Fixers',
+    description:
+      'Turn your LinkedIn profile into a recruiter magnet with search-optimized headlines, compelling summaries, and keyword positioning.',
+    url: 'https://www.careerfixers.com/linkedin-optimization',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'LinkedIn Profile Optimization Service | Career Fixers',
+    description: 'Transform your LinkedIn into a 24/7 recruiter magnet.',
   },
 };
 

@@ -4,11 +4,31 @@ import FaqSection from '@/components/FaqSection';
 import FinalCta from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'Transparent Pricing & Career Packages | Career Fixers',
+  title: 'Transparent Pricing & Career Document Packages | Career Fixers',
   description:
-    'Clear, upfront pricing for professional resume writing, LinkedIn optimization, and cover letters. Packages starting from $150 with unlimited revisions.',
+    'Upfront, transparent pricing for ATS resume writing, executive CVs, LinkedIn optimization, and cover letters. Packages starting from $150 with unlimited revisions.',
+  keywords: [
+    'resume writing pricing',
+    'resume cost',
+    'professional CV prices',
+    'career packages',
+    'LinkedIn makeover cost',
+    'cover letter price',
+  ],
   alternates: {
-    canonical: '/pricing',
+    canonical: 'https://www.careerfixers.com/pricing',
+  },
+  openGraph: {
+    title: 'Transparent Pricing & Career Packages | Career Fixers',
+    description:
+      'Clear, upfront pricing for professional resume writing, executive CVs, and LinkedIn optimization. 100% human-crafted with a 60-day guarantee.',
+    url: 'https://www.careerfixers.com/pricing',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Transparent Career Document Pricing | Career Fixers',
+    description: 'Upfront pricing for ATS resumes, LinkedIn makeovers, and cover letters.',
   },
 };
 

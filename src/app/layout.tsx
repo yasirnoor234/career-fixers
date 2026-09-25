@@ -14,33 +14,47 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Career Fixers | Professional ATS-Friendly Resumes & Career Documents',
+  metadataBase: new URL('https://www.careerfixers.com'),
+  title: {
+    default: 'Career Fixers | Professional ATS-Friendly Resumes & Career Services',
+    template: '%s | Career Fixers',
+  },
   description:
-    'Create a professional, ATS-friendly resume, CV, cover letter, and LinkedIn profile designed to help you present your experience with confidence.',
+    'Human-written, ATS-optimized resumes, CVs, cover letters, and LinkedIn profile overhauls by senior US-based writers. 60-day interview guarantee.',
   keywords: [
-    'resume writing',
+    'resume writing service',
     'ATS resume',
-    'executive CV',
-    'LinkedIn makeover',
+    'professional resume writer',
+    'executive CV writing',
+    'LinkedIn profile optimization',
     'cover letter writing',
-    'professional resume service',
+    'ATS-friendly resume',
     'career fixers',
+    'executive resume service',
+    'resume rewrite',
   ],
-  authors: [{ name: 'Career Fixers' }],
-  metadataBase: new URL('https://career-fixers.web.app'),
+  authors: [{ name: 'Career Fixers', url: 'https://www.careerfixers.com' }],
+  creator: 'Career Fixers',
+  publisher: 'Career Fixers',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.careerfixers.com/',
   },
   openGraph: {
     type: 'website',
-    url: 'https://career-fixers.web.app/',
+    locale: 'en_US',
+    url: 'https://www.careerfixers.com/',
+    siteName: 'Career Fixers',
     title: 'Career Fixers | Professional ATS-Friendly Resumes & Career Documents',
     description:
-      'Professional, ATS-optimized resumes and career documents designed to help you stand out, pass applicant tracking systems, and present your experience with confidence.',
-    siteName: 'Career Fixers',
+      'Professional, ATS-optimized resumes and career documents engineered to pass automated screeners and win executive interviews. 100% human-crafted with a 60-day guarantee.',
     images: [
       {
-        url: '/images/executive-classic.png',
+        url: 'https://www.careerfixers.com/images/executive-classic.png',
         width: 800,
         height: 1130,
         alt: 'Career Fixers ATS Resume Preview',
@@ -52,7 +66,18 @@ export const metadata: Metadata = {
     title: 'Career Fixers | Professional ATS-Friendly Resumes',
     description:
       'Human-written, ATS-optimized resumes, cover letters, and LinkedIn profiles designed around your target roles.',
-    images: ['/images/executive-classic.png'],
+    images: ['https://www.careerfixers.com/images/executive-classic.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F172A'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='22' font-family='sans-serif' font-weight='800' fill='%23FFFFFF'%3ECF%3C/text%3E%3C/svg%3E",
@@ -68,11 +93,36 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Career Fixers',
+    image: 'https://www.careerfixers.com/images/executive-classic.png',
     description:
       'Professional ATS-friendly resume writing, cover letters, and LinkedIn profile optimization by experienced US-based writers.',
-    url: 'https://career-fixers.web.app/',
-    logo: 'https://career-fixers.web.app/images/executive-classic.png',
+    url: 'https://www.careerfixers.com/',
+    logo: 'https://www.careerfixers.com/images/executive-classic.png',
     priceRange: '$25 - $225',
+    telephone: '+1-800-CAREER-FIX',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'US',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+      opens: '00:00',
+      closes: '23:59',
+    },
+    sameAs: [
+      'https://www.linkedin.com/company/careerfixers/',
+      'https://www.linkedin.com/in/farahsheikh-careerfixers',
+      'https://www.linkedin.com/in/suban-khalid-careerfixers',
+    ],
     contactPoint: [
       {
         '@type': 'ContactPoint',
@@ -83,6 +133,11 @@ export default function RootLayout({
         '@type': 'ContactPoint',
         email: 'suban@careerfixers.com',
         contactType: 'Customer Support',
+      },
+      {
+        '@type': 'ContactPoint',
+        email: 'ceo.careerfixers@gmail.com',
+        contactType: 'Executive Inquiries',
       },
     ],
   };

@@ -3,11 +3,30 @@ import Link from 'next/link';
 import FinalCta from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'Custom Cover Letter Writing Service | Career Fixers',
+  title: 'Custom Cover Letter Writing Service | Story-Driven Job Applications',
   description:
-    'Engaging, personalized cover letters tailored to your target job postings. Stand out to hiring managers and explain your unique value proposition.',
+    'Persuasive, targeted cover letters tailored to your target job descriptions. Articulate your unique value proposition, leadership story, and fit.',
+  keywords: [
+    'cover letter writing',
+    'custom cover letter',
+    'professional cover letter service',
+    'executive cover letter',
+    'job application letter',
+  ],
   alternates: {
-    canonical: '/cover-letter',
+    canonical: 'https://www.careerfixers.com/cover-letter',
+  },
+  openGraph: {
+    title: 'Custom Cover Letter Writing Service | Career Fixers',
+    description:
+      'Story-driven, persuasive cover letters tailored to your target job postings to stand out to hiring managers.',
+    url: 'https://www.careerfixers.com/cover-letter',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Cover Letter Writing Service | Career Fixers',
+    description: 'Story-driven cover letters tailored to target job openings.',
   },
 };
 

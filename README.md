@@ -34,15 +34,15 @@ Built with **Next.js 15 (App Router)**, **TypeScript**, and a **custom Vanilla C
 
 | Route | Description |
 | :--- | :--- |
-| [`/`](https://career-fixers.web.app/) | **Home**: Hero with instant review intake, trust metrics, interactive sample gallery, and pricing. |
-| [`/resume-cv`](https://career-fixers.web.app/resume-cv) | **Resume & CV**: The 4 foundational pillars of ATS writing, sample showcase, and complimentary audit. |
-| [`/cover-letter`](https://career-fixers.web.app/cover-letter) | **Cover Letter**: Role-tailored narrative frameworks that hook hiring managers. |
-| [`/linkedin-optimization`](https://career-fixers.web.app/linkedin-optimization) | **LinkedIn Makeover**: Recruiter keyword density, headline architecture, and About section storytelling. |
-| [`/services`](https://career-fixers.web.app/services) | **All Services**: Full catalog of career documents, executive dossiers, and add-on services. |
-| [`/pricing`](https://career-fixers.web.app/pricing) | **Packages & Pricing**: Full package breakdowns ($75 - $250) with unlimited revisions. |
-| [`/about`](https://career-fixers.web.app/about) | **About Us**: 6-Phase methodology, Managing Partner profiles, and 60-day interview guarantee. |
-| [`/faq`](https://career-fixers.web.app/faq) | **FAQ**: Interactive accordion addressing process, turnaround times, and file deliverables. |
-| [`/contact`](https://career-fixers.web.app/contact) | **Contact**: Direct messaging form and leadership advisory access. |
+| [`/`](https://www.careerfixers.com/) | **Home**: Hero with instant review intake, trust metrics, interactive sample gallery, and pricing. |
+| [`/resume-cv`](https://www.careerfixers.com/resume-cv) | **Resume & CV**: The 4 foundational pillars of ATS writing, sample showcase, and complimentary audit. |
+| [`/cover-letter`](https://www.careerfixers.com/cover-letter) | **Cover Letter**: Role-tailored narrative frameworks that hook hiring managers. |
+| [`/linkedin-optimization`](https://www.careerfixers.com/linkedin-optimization) | **LinkedIn Makeover**: Recruiter keyword density, headline architecture, and About section storytelling. |
+| [`/services`](https://www.careerfixers.com/services) | **All Services**: Full catalog of career documents, executive dossiers, and add-on services. |
+| [`/pricing`](https://www.careerfixers.com/pricing) | **Packages & Pricing**: Full package breakdowns ($75 - $250) with unlimited revisions. |
+| [`/about`](https://www.careerfixers.com/about) | **About Us**: 6-Phase methodology, Managing Partner profiles, and 60-day interview guarantee. |
+| [`/faq`](https://www.careerfixers.com/faq) | **FAQ**: Interactive accordion addressing process, turnaround times, and file deliverables. |
+| [`/contact`](https://www.careerfixers.com/contact) | **Contact**: Direct messaging form and leadership advisory access. |
 
 ---
 

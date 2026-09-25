@@ -5,11 +5,31 @@ import SamplesGallery from '@/components/SamplesGallery';
 import FinalCta from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'Professional Resume & CV Writing Service | Career Fixers',
+  title: 'Professional Resume & CV Writing Service | ATS-Optimized Documents',
   description:
-    'Custom, ATS-friendly resume writing by experienced US writers. Highlight measurable achievements, pass automated screening, and land more interviews.',
+    'Custom ATS-friendly resume writing by senior US-based career strategists. Pass automated applicant tracking systems, highlight key achievements, and land more interviews.',
+  keywords: [
+    'ATS resume writing',
+    'professional CV writer',
+    'executive resume service',
+    'ATS-friendly resume rewrite',
+    'career documents',
+    'resume consultant',
+  ],
   alternates: {
-    canonical: '/resume-cv',
+    canonical: 'https://www.careerfixers.com/resume-cv',
+  },
+  openGraph: {
+    title: 'Professional Resume & CV Writing Service | Career Fixers',
+    description:
+      'Human-crafted, ATS-optimized resumes engineered to pass recruitment screening algorithms and win executive callbacks.',
+    url: 'https://www.careerfixers.com/resume-cv',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professional ATS Resume Writing Service | Career Fixers',
+    description: 'Human-crafted, ATS-optimized resumes engineered to win callbacks.',
   },
 };
 

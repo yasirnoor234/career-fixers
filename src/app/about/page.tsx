@@ -2,11 +2,31 @@ import type { Metadata } from 'next';
 import FinalCta from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'About Career Fixers | Human-Led Resume & Career Experts',
+  title: 'About Career Fixers | U.S.-Based Executive Resume Writers & Career Strategists',
   description:
-    'Learn about Career Fixers mission, our U.S.-based team of professional resume writers, our 6-step methodology, and our interview guarantees.',
+    'Learn about Career Fixers mission, our leadership team led by Farah Sheikh and Suban Khalid, our 6-step writing methodology, and our 60-day interview guarantee.',
+  keywords: [
+    'about Career Fixers',
+    'professional resume writers',
+    'executive resume strategists',
+    'Farah Sheikh resume',
+    'Suban Khalid resume',
+    'resume guarantee',
+  ],
   alternates: {
-    canonical: '/about',
+    canonical: 'https://www.careerfixers.com/about',
+  },
+  openGraph: {
+    title: 'About Career Fixers | Human-Led Career Documents & Strategy',
+    description:
+      'Learn about Career Fixers mission, leadership, 6-step collaborative methodology, and interview guarantees.',
+    url: 'https://www.careerfixers.com/about',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Career Fixers | Human-Led Career Documents',
+    description: 'Learn about our mission, methodology, and US-based writing team.',
   },
 };
 
