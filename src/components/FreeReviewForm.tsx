@@ -78,21 +78,34 @@ export default function FreeReviewForm({ idPrefix = 'hero', isCompact = false }:
       name,
       email,
       target,
-      notes: notes ? `${notes} (Uploaded: ${fileName || 'None'})` : `Uploaded File: ${fileName || 'None'}`,
+      notes,
+      fileName,
       type: 'free-review',
     };
 
     try {
-      // Local backup
+      // Local backup of text metadata
       const stored = JSON.parse(localStorage.getItem('careerFixersSubmissions') || '[]');
       stored.push({ ...submission, submittedAt: new Date().toISOString() });
       localStorage.setItem('careerFixersSubmissions', JSON.stringify(stored));
 
+      // Construct multipart FormData so the physical file is sent and attached to the email
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('target', target);
+      formData.append('notes', notes);
+      formData.append('type', 'free-review');
+
+      const selectedFile = fileInputRef.current?.files?.[0];
+      if (selectedFile) {
+        formData.append('resume', selectedFile);
+      }
+
       // Send to server API endpoint for email delivery to ceo.careerfixers@gmail.com
       const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(submission),
+        body: formData,
       });
 
       if (!res.ok) {
@@ -112,6 +125,9 @@ export default function FreeReviewForm({ idPrefix = 'hero', isCompact = false }:
       setTarget('');
       setNotes('');
       setFileName('');
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
     }
   };
 

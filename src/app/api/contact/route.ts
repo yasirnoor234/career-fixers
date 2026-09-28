@@ -3,8 +3,42 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const { name, email, target, notes, careerLevel, type } = body;
+    const contentType = req.headers.get('content-type') || '';
+    let name = '';
+    let email = '';
+    let target = '';
+    let notes = '';
+    let careerLevel = '';
+    let type = '';
+    let fileAttachment: { filename: string; content: Buffer; contentType?: string } | null = null;
+
+    if (contentType.includes('multipart/form-data')) {
+      const formData = await req.formData();
+      name = (formData.get('name') as string) || '';
+      email = (formData.get('email') as string) || '';
+      target = (formData.get('target') as string) || '';
+      notes = (formData.get('notes') as string) || '';
+      careerLevel = (formData.get('careerLevel') as string) || '';
+      type = (formData.get('type') as string) || '';
+
+      const file = formData.get('resume') as File | null;
+      if (file && file.size > 0 && typeof file.arrayBuffer === 'function') {
+        const buffer = Buffer.from(await file.arrayBuffer());
+        fileAttachment = {
+          filename: file.name,
+          content: buffer,
+          contentType: file.type || 'application/octet-stream',
+        };
+      }
+    } else {
+      const body = await req.json();
+      name = body.name || '';
+      email = body.email || '';
+      target = body.target || '';
+      notes = body.notes || '';
+      careerLevel = body.careerLevel || '';
+      type = body.type || '';
+    }
 
     if (!name || !email) {
       return NextResponse.json(
@@ -56,6 +90,11 @@ export async function POST(req: Request) {
               <td style="padding: 8px 0; color: #64748b; font-weight: bold;">Career Tier:</td>
               <td style="padding: 8px 0; color: #0f172a; text-transform: capitalize;">${careerLevel}</td>
             </tr>` : ''}
+            ${fileAttachment ? `
+            <tr>
+              <td style="padding: 8px 0; color: #64748b; font-weight: bold;">Attached Resume:</td>
+              <td style="padding: 8px 0; color: #0f172a; font-weight: bold;">📎 ${fileAttachment.filename}</td>
+            </tr>` : ''}
             <tr>
               <td style="padding: 8px 0; color: #64748b; font-weight: bold;">Timestamp:</td>
               <td style="padding: 8px 0; color: #64748b;">${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })} EST</td>
@@ -93,6 +132,7 @@ export async function POST(req: Request) {
         replyTo: email,
         subject: emailSubject,
         html: emailHtml,
+        attachments: fileAttachment ? [fileAttachment] : [],
       });
 
       return NextResponse.json({
@@ -108,6 +148,7 @@ export async function POST(req: Request) {
         notes,
         careerLevel,
         formType,
+        hasAttachment: !!fileAttachment,
       });
 
       return NextResponse.json({
