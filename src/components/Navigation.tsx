@@ -36,7 +36,14 @@ export default function Navigation() {
     <header className={`site-nav ${isScrolled ? 'is-scrolled' : ''}`}>
       <div className="container nav-container">
         <Link className="brand" href="/" aria-label="Career Fixers Home" onClick={closeMobile}>
-          <div className="brand-emblem" aria-hidden="true">CF</div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/career-fixers-logo.svg"
+            alt="Career Fixers Logo"
+            width={38}
+            height={38}
+            className="brand-logo-img"
+          />
           <span className="brand-name">Career Fixers</span>
         </Link>
 

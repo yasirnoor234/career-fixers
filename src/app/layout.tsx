@@ -109,11 +109,11 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Career Fixers',
-    image: 'https://www.careerfixers.com/images/executive-classic.png',
+    image: 'https://www.careerfixers.com/images/career-fixers-logo.png',
     description:
       'Professional ATS-friendly resume writing, cover letters, and LinkedIn profile optimization by experienced US-based writers.',
     url: 'https://www.careerfixers.com/',
-    logo: 'https://www.careerfixers.com/images/executive-classic.png',
+    logo: 'https://www.careerfixers.com/images/career-fixers-logo.png',
     priceRange: '$25 - $225',
     telephone: '+1-800-CAREER-FIX',
     address: {
@@ -161,6 +161,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={plusJakartaSans.variable}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/icon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/icon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

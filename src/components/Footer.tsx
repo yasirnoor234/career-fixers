@@ -7,7 +7,14 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link className="brand" href="/" aria-label="Career Fixers Home">
-              <div className="brand-emblem" aria-hidden="true">CF</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/career-fixers-logo.svg"
+                alt="Career Fixers Logo"
+                width={38}
+                height={38}
+                className="brand-logo-img"
+              />
               <span className="brand-name" style={{ color: '#FFFFFF' }}>Career Fixers</span>
             </Link>
             <p className="footer-brand-copy">
