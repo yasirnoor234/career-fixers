@@ -55,19 +55,19 @@ export const metadata: Metadata = {
       'Professional, ATS-optimized resumes and career documents engineered to pass automated screeners and win executive interviews. 100% human-crafted with a 60-day guarantee.',
     images: [
       {
-        url: 'https://www.careerfixers.com/images/executive-classic.png',
-        width: 800,
-        height: 1130,
-        alt: 'Career Fixers ATS Resume Preview',
+        url: 'https://www.careerfixers.com/images/career-fixers-logo.png',
+        width: 512,
+        height: 512,
+        alt: 'Career Fixers Logo',
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Career Fixers | Professional ATS-Friendly Resumes',
     description:
       'Human-written, ATS-optimized resumes, cover letters, and LinkedIn profiles designed around your target roles.',
-    images: ['https://www.careerfixers.com/images/executive-classic.png'],
+    images: ['https://www.careerfixers.com/images/career-fixers-logo.png'],
   },
   robots: {
     index: true,

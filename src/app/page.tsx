@@ -26,6 +26,14 @@ export const metadata: Metadata = {
       'Human-written, ATS-optimized resumes, cover letters, and LinkedIn profile overhauls. Pass screening algorithms and win more executive interviews.',
     url: 'https://www.careerfixers.com/',
     type: 'website',
+    images: [
+      {
+        url: 'https://www.careerfixers.com/images/career-fixers-logo.png',
+        width: 512,
+        height: 512,
+        alt: 'Career Fixers Logo',
+      },
+    ],
   },
 };
 

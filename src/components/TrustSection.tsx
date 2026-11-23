@@ -76,7 +76,7 @@ export default function TrustSection() {
                 <polyline points="14 2 14 8 20 8" />
               </svg>
             </div>
-            <div className="stat-value">20,000+</div>
+            <div className="stat-value">5,000+</div>
             <div className="stat-label">Resumes Written &amp; Optimized</div>
           </div>
 
@@ -101,7 +101,7 @@ export default function TrustSection() {
               </svg>
             </div>
             <div className="stat-value">100%</div>
-            <div className="stat-label">U.S.-Based Career Strategists</div>
+            <div className="stat-label">Customized Documents</div>
           </div>
 
           <div className="stat-card">

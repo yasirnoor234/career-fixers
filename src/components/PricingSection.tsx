@@ -96,12 +96,6 @@ export default function PricingSection() {
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      Unlimited revisions
-                    </li>
-                    <li>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
                       Word &amp; PDF delivery
                     </li>
                   </ul>
@@ -158,13 +152,7 @@ export default function PricingSection() {
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      Unlimited revisions
-                    </li>
-                    <li>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      60-day interview guarantee
+                      3 Revisions
                     </li>
                   </ul>
                 </div>
@@ -181,7 +169,7 @@ export default function PricingSection() {
                 <div className="pricing-tier-name">Executive Package</div>
                 <div className="pricing-price">
                   <span className="price-currency">$</span>
-                  <span className="price-amount">225</span>
+                  <span className="price-amount">400</span>
                   <span className="price-period">/ total bundle</span>
                 </div>
                 <p className="pricing-description">
@@ -189,9 +177,9 @@ export default function PricingSection() {
                 </p>
 
                 <div className="pricing-breakdown">
-                  <div className="breakdown-row"><span>Executive Rewrite</span><strong>$150</strong></div>
-                  <div className="breakdown-row"><span>LinkedIn Profile</span><strong>$50</strong></div>
-                  <div className="breakdown-row"><span>Custom Cover Letter</span><strong>$25</strong></div>
+                  <div className="breakdown-row"><span>Executive Rewrite</span><strong>$250</strong></div>
+                  <div className="breakdown-row"><span>LinkedIn Profile</span><strong>$100</strong></div>
+                  <div className="breakdown-row"><span>Custom Cover Letter</span><strong>$50</strong></div>
                 </div>
 
                 <div className="pricing-includes">
@@ -213,7 +201,7 @@ export default function PricingSection() {
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      Executive LinkedIn makeover
+                      Executive LinkedIn makeover (including Modified Display Picture and Customized Background Picture)
                     </li>
                     <li>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
@@ -225,7 +213,19 @@ export default function PricingSection() {
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      6-month job offer guarantee
+                      One-to-one call with consultant
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      Unlimited revisions
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      Free redo if you don&apos;t get an opportunity within 60 days
                     </li>
                   </ul>
                 </div>
