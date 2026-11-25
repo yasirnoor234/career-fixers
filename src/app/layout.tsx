@@ -114,7 +114,7 @@ export default function RootLayout({
       'Professional ATS-friendly resume writing, cover letters, and LinkedIn profile optimization by experienced US-based writers.',
     url: 'https://www.careerfixers.com/',
     logo: 'https://www.careerfixers.com/images/career-fixers-logo.png',
-    priceRange: '$25 - $225',
+    priceRange: '$25 - $400',
     telephone: '+1-800-CAREER-FIX',
     address: {
       '@type': 'PostalAddress',
